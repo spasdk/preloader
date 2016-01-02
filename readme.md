@@ -6,7 +6,7 @@ Web resources loader/cacher
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/spasdk)
 
 
-This cacher module is an instance of [Emitter](https://github.com/cjssdk/emitter) component.
+This cacher module is an instance of [Emitter](https://github.com/cjssdk/emitter) module.
 Loads images and other web resources to have instant access in the future.
 
 
