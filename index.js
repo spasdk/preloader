@@ -53,10 +53,8 @@ function handler ( event ) {
     // report
     if ( event.type === 'error' ) {
         debug.log('[preloader] group "' + this.group + '" link "' + this.src + '"', 'red');
-    } else {
-        if ( verbose ) {
-            debug.log('[preloader] group "' + this.group + '" link "' + this.src + '" (' + this.width + 'x' + this.height + ')');
-        }
+    } else if ( verbose ) {
+        debug.log('[preloader] group "' + this.group + '" link "' + this.src + '" (' + this.width + 'x' + this.height + ')');
     }
 
     queueSize--;
