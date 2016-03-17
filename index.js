@@ -107,7 +107,7 @@ function handler ( event ) {
  * ]);
  */
 preloader.add = function ( links ) {
-    if ( DEBUG ) {
+    if ( DEVELOP ) {
         if ( !Array.isArray(links) ) { throw new Error(__filename + ': wrong argument links'); }
     }
 
@@ -117,7 +117,7 @@ preloader.add = function ( links ) {
             url   = item.url   || item,
             group = item.group || '';
 
-        if ( DEBUG ) {
+        if ( DEVELOP ) {
             if ( typeof url !== 'string' ) { throw new Error(__filename + ': wrong url type'); }
             if ( typeof group !== 'string' ) { throw new Error(__filename + ': wrong group type'); }
             if ( url.trim() === '' ) { throw new Error(__filename + ': empty url'); }
