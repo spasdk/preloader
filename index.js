@@ -50,6 +50,8 @@ var Emitter   = require('cjs-emitter'),
  * @fires module:stb/preloader#done
  */
 function handler ( event ) {
+    /* eslint no-invalid-this: 0 */
+
     // report
     if ( event.type === 'error' ) {
         debug.log('[preloader] group "' + this.group + '" link "' + this.src + '"', 'red');
