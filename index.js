@@ -110,7 +110,9 @@ function handler ( event ) {
  */
 preloader.add = function ( links ) {
     if ( DEVELOP ) {
-        if ( !Array.isArray(links) ) { throw new Error(__filename + ': wrong argument links'); }
+        if ( !Array.isArray(links) ) {
+            throw new Error(__filename + ': wrong argument links');
+        }
     }
 
     // walk through all the given links
@@ -120,9 +122,15 @@ preloader.add = function ( links ) {
             group = item.group || '';
 
         if ( DEVELOP ) {
-            if ( typeof url !== 'string' ) { throw new Error(__filename + ': wrong url type'); }
-            if ( typeof group !== 'string' ) { throw new Error(__filename + ': wrong group type'); }
-            if ( url.trim() === '' ) { throw new Error(__filename + ': empty url'); }
+            if ( typeof url !== 'string' ) {
+                throw new Error(__filename + ': wrong url type');
+            }
+            if ( typeof group !== 'string' ) {
+                throw new Error(__filename + ': wrong group type');
+            }
+            if ( url.trim() === '' ) {
+                throw new Error(__filename + ': empty url');
+            }
         }
 
         // increase counters
